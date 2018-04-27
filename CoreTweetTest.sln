@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTweetTest", "CoreTweetT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTweetOembedTest", "CoreTweetOembedTest\CoreTweetOembedTest.csproj", "{0370369B-AB6F-4C07-B162-4E42036AD3ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OembedTest", "OembedTest\OembedTest.csproj", "{0CBE0205-E710-4B4F-8436-F18423743378}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0370369B-AB6F-4C07-B162-4E42036AD3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0370369B-AB6F-4C07-B162-4E42036AD3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0370369B-AB6F-4C07-B162-4E42036AD3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CBE0205-E710-4B4F-8436-F18423743378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBE0205-E710-4B4F-8436-F18423743378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBE0205-E710-4B4F-8436-F18423743378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBE0205-E710-4B4F-8436-F18423743378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
