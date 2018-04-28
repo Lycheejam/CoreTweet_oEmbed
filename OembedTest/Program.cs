@@ -94,8 +94,8 @@ namespace OembedTest {
             Console.WriteLine("テーマ dark：{0}", emb.Html);
 
             //リンクカラー（ハッシュタグ/@hogehoge/URL）
-            emb = t.Statuses.Oembed(id => TextTweetId
-                                    , link_color => "#2ECCFA");
+            emb = t.Statuses.Oembed(id => ThreadTweetId
+                                    , link_color => "#DF013A");
             Console.WriteLine("リンクカラー：{0}", emb.Html);
 
             //ウィジェット仕様 ビデオ専用
