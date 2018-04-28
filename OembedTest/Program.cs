@@ -93,7 +93,10 @@ namespace OembedTest {
                                     , theme => "dark");
             Console.WriteLine("テーマ dark：{0}", emb.Html);
 
-            //ハッシュタグの色（URLも全部？）
+            //リンクカラー（ハッシュタグ/@hogehoge/URL）
+            emb = t.Statuses.Oembed(id => TextTweetId
+                                    , link_color => "#2ECCFA");
+            Console.WriteLine("リンクカラー：{0}", emb.Html);
 
             //ウィジェット仕様 ビデオ専用
             emb = t.Statuses.Oembed(id => VideoTweetId);
@@ -101,7 +104,14 @@ namespace OembedTest {
             emb = t.Statuses.Oembed(id => VideoTweetId
                                     , widget_type => "video");
             Console.WriteLine("Video専用：{0}", emb.Html);
-            //dnt(データ利用可否？)
+            //dnt(データ利用可)
+            emb = t.Statuses.Oembed(id => TextTweetId
+                                    , dnt => true);
+            Console.WriteLine("広告利用可：{0}", emb.Html);
+            //dnt(データ利用不可)
+            emb = t.Statuses.Oembed(id => TextTweetId
+                                    , dnt => false);
+            Console.WriteLine("広告利用不可：{0}", emb.Html);
         }
     }
 }
